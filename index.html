@@ -240,9 +240,9 @@
       }
 
       .guide {
-        position: relative;
-        height: 215px;
-        display: block;
+        height: 320px;
+        display: grid;
+        place-items: center;
         overflow: hidden;
         margin-bottom: 17px;
         border: 1px solid #3c3c41;
@@ -255,18 +255,6 @@
         height: 100%;
         display: block;
         object-fit: contain;
-      }
-
-      .guide::after {
-        content: "View";
-        position: absolute;
-        right: 8px;
-        bottom: 8px;
-        padding: 5px 8px;
-        border-radius: 4px;
-        background: rgba(0, 0, 0, 0.8);
-        font-size: 0.67rem;
-        font-weight: 900;
       }
 
       .instruction {
@@ -410,7 +398,7 @@
         }
 
         .guide {
-          height: 240px;
+          height: 360px;
         }
 
         .message-actions {
@@ -502,18 +490,13 @@
           <article class="step">
             <span class="step-number">STEP 01</span>
             <h3>Register</h3>
-            <a
-              class="guide"
-              href="XYES-landing/assets/step-1-register.jpg"
-              target="_blank"
-              title="Open registration screenshot"
-            >
+            <div class="guide">
               <img
                 src="XYES-landing/assets/step-1-register.jpg"
                 alt="XYES registration form"
                 loading="lazy"
               />
-            </a>
+            </div>
             <p class="instruction">
               <span>Enter your email and password. Tap <strong>Create Account</strong>.</span>
             </p>
@@ -530,18 +513,13 @@
           <article class="step">
             <span class="step-number">STEP 02</span>
             <h3>Copy your XYES ID</h3>
-            <a
-              class="guide"
-              href="XYES-landing/assets/step-2-account.jpg"
-              target="_blank"
-              title="Open account screenshot"
-            >
+            <div class="guide">
               <img
                 src="XYES-landing/assets/step-2-account.jpg"
                 alt="XYES account page"
                 loading="lazy"
               />
-            </a>
+            </div>
             <p class="instruction">
               <span>Open <strong>My Account</strong>. Copy the ID below your nickname.</span>
             </p>
@@ -558,18 +536,13 @@
           <article class="step">
             <span class="step-number">STEP 03</span>
             <h3>Send and wait</h3>
-            <a
-              class="guide"
-              href="XYES-landing/assets/step-3-telegram.jpg"
-              target="_blank"
-              title="Open Telegram screenshot"
-            >
+            <div class="guide">
               <img
                 src="XYES-landing/assets/step-3-telegram.jpg"
                 alt="Official Telegram account xyes_sun"
                 loading="lazy"
               />
-            </a>
+            </div>
             <p class="instruction">
               <span>Send your ID to <strong>@xyes_sun</strong>. Wait for approval.</span>
             </p>
